@@ -1,0 +1,58 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wtimestamp Microservice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        API projects: Time-Stamp microservice.
+      </h1>
+      
+    </header>
+
+    <main>
+      <h4>
+        Description:
+      </h4>
+
+      <p>
+      <ul>
+        <li>You can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: September 7, 2017).</li>
+        <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+      </ul>
+      </p>
+    
+    <h4>
+      Example usage:
+    </h4>
+    <code>https://mhl-timestamp.glitch.me/September 7, 2017</code><br>
+    <code>https://mhl-timestamp.glitch.me/1504742400000</code>
+    
+    <h4>
+      Result:
+    </h4>
+    <code>{unix:	1504742400000, natural:	"Thu Sep 07 2017"}</code>
+    </main>
+
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
