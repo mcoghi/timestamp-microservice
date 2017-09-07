@@ -1,0 +1,11 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+body{
+  margin-top: 10vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
